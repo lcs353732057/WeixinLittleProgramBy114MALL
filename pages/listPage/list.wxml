@@ -1,0 +1,12 @@
+
+<!--<block wx:for-items="{{goodsInfoList}}">-->
+<view wx:for="{{goodsInfoList}}">
+  <view class="list1">
+    <!--<image src="http://img.114mall.com/{{item.imageImg1}}_300x300" width="80" height="80" class="list_item" mode="aspectFit"></image>-->
+    <text>{{item.id}}</text>
+  </view>
+  <view style="flex-direction:column;">
+    <text>{{item.id}}</text>
+    <text>{{item.name}}</text>
+  </view>
+</view>

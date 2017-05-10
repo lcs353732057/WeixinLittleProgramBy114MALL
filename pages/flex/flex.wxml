@@ -1,0 +1,40 @@
+<loading hidden="{{hidden}}" bindchange="loadingChange">
+  加载中...
+</loading>
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+  <view wx:if="{{hasRefesh}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+    <icon type="waiting" size="45" />
+    <text>刷新中...</text>
+  </view>
+  <view wx:else style="display:none">
+    <text>没有更多内容了</text>
+  </view>
+  <view wx:for="{{goodsInfoList}}">
+    <view class="flex-row" style="display: flex;flex-direction: row">
+      <view>
+        <image src="http://img.114mall.com/{{item.imageImg1}}_300x300" class="flex-view-item" mode="scaleToFill"></image>
+      </view>
+      <view class="flex-column" style="display:flex;flex-direction: column;">
+        <text class="title">{{item.name}}</text>
+        <view class="view">
+          <text class="price">¥{{item.price/100}}</text>
+          <text class="price2">/</text>
+          <text class="price1">{{item.marketPrice/100}}</text>
+        </view>
+        <view class="view">
+          <text class="text1">已有{{item.sellCount}}人购买</text>
+          <text class="text1" style="margin-left: 30rpx;">所在地{{item.code}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tips1">
+    <view wx:if="{{hasMore}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+      <icon type="waiting" size="45" />
+      <text>玩命的加载中...</text>
+    </view>
+    <view wx:else>
+      <text>没有更多内容了</text>
+    </view>
+  </view>
+</scroll-view>

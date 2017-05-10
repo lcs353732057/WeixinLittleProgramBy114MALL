@@ -1,0 +1,64 @@
+.container {
+  margin-bottom: 20;
+  display: block;
+}
+
+.flex-row {
+  padding: 10rpx;
+}
+
+.flex-column {
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.flex-view-item {
+  background: gray;
+  padding: 4rpx;
+  height: 200rpx;
+  width: 200rpx;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
+}
+
+.text {
+  color: snow;
+  background: salmon;
+  padding: 8rpx;
+}
+
+.text1 {
+  color: gray;
+  font-size: 10px;
+}
+.view{
+  margin-top: 10rpx;
+}
+
+.title {
+  color: black;
+  font-size: 13px;
+}
+
+.price {
+  color: red;
+  text-align: center;
+  font-size: 12px;
+}
+
+.price1 {
+  text-decoration: line-through;
+  font-size: 10px;
+  color: black;
+}
+
+.price2 {
+  font-size: 10px;
+  color: black;
+}
+
+tips1{
+   height: 60px;
+
+}
